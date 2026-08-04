@@ -1,0 +1,15 @@
+# Generated image assets — regenerated each run, do not version
+social-assets/
+*.jpg
+*.jpeg
+*.png
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
