@@ -32,7 +32,7 @@ This task fires daily at 17:00, but must only actually run on **Sunday, Tuesday,
 4. Only if both checks pass, continue to Step 1.
 
 ## Step 1 — Read history
-Read `story_layers_social_history.json` (path: `C:\Users\user\Desktop\הדפסות\claude website\story_layers_social_history.json`). It's a JSON array; each entry has: `date`, `post_id`, `permalink`, `concept`, `event_type`, `audience`, `location`, `mood`, `color_palette`, `opening_line`, `cta`, `image_prompt`, `caption`, `hashtags`, `status`.
+Read `story_layers_social_history.json`, in the same directory as this playbook — the repo root when running from this git checkout (a cloud routine clones this repo fresh each run), or `C:\Users\user\Desktop\הדפסות\claude website\story_layers_social_history.json` when running as the local Windows scheduled task. It's a JSON array; each entry has: `date`, `post_id`, `permalink`, `concept`, `event_type`, `audience`, `location`, `mood`, `color_palette`, `opening_line`, `cta`, `image_prompt`, `caption`, `hashtags`, `status`.
 
 If the file is missing or unreadable, create it as an empty array `[]` first, then proceed (this is the "story_layers_social_history" file the owner asked for).
 
@@ -103,12 +103,14 @@ Requirements (write these into the actual prompt you send to Gemini, adapted to 
 **After generating, visually inspect the image yourself** (you can view images) against this checklist: correct ~4:5 proportions, no garbled text, no major distortions/warping, no identifiable real-looking faces; plus, for Style A the product is clear and central, for Style B the emotional moment reads clearly and the framed piece is visible somewhere in-scene. If it fails, regenerate. **Maximum 3 attempts.** If all 3 fail, treat this run as a failure — go to the Step 6 failure path (save as draft, report the error), do not publish a flawed image.
 
 ### Hosting the image (required before Instagram can use it)
-Gemini's returned URL is a short-lived signed link — Instagram needs a stable one. Do this every time:
-1. Download the generated image to `C:\Users\user\Desktop\הדפסות\claude website\social-assets\post-<today's date>.jpg`.
-2. Resize it to 1080px width via PowerShell + `System.Drawing` (Windows has no ImageMagick — do NOT use `convert`, that's Windows' disk-conversion utility, not an image tool). Quality ~85. This keeps the file small enough to upload directly.
-3. Get the ImgBB API key via the `IMGBB_GET_API_KEY` Composio tool (toolkit `imgbb`, already connected).
-4. Upload the resized file directly via `curl -X POST "https://api.imgbb.com/1/upload" -F "key=<key>" -F "expiration=2592000" -F "image=@<local path>"` (do NOT try to pass base64 through a Composio tool call — it's too large and wastes context; direct curl with the retrieved key is the efficient path, already proven to work).
-5. Use the returned `data.url` (the direct image link, e.g. `https://i.ibb.co/.../....jpg`) as the Instagram `image_url`.
+Gemini's returned URL is a short-lived signed link — Instagram needs a stable one. Resize to 1080px width, quality 85 — method depends on where this run is executing:
+- **Local Windows scheduled task**: download the generated image to `C:\Users\user\Desktop\הדפסות\claude website\social-assets\post-<today's date>.jpg`, then resize via PowerShell + `System.Drawing` (Windows has no ImageMagick — do NOT use `convert`, that's Windows' disk-conversion utility, not an image tool).
+- **Cloud routine (Linux sandbox — no PowerShell)**: use this repo's `scripts/resize_image.py` (Pillow) instead: `python scripts/resize_image.py --url "<gemini-signed-url>" --out social-assets/post-<today's date>-resized.jpg` — downloads and resizes in one step (use `--in <path>` instead of `--url` if the image was already downloaded some other way).
+
+Then, regardless of platform:
+1. Get the ImgBB API key via the `IMGBB_GET_API_KEY` Composio tool (toolkit `imgbb`, already connected).
+2. Upload the resized file directly via `curl -X POST "https://api.imgbb.com/1/upload" -F "key=<key>" -F "expiration=2592000" -F "image=@<resized path>"` (do NOT try to pass base64 through a Composio tool call — it's too large and wastes context; direct curl with the retrieved key is the efficient path, already proven to work).
+3. Use the returned `data.url` (the direct image link, e.g. `https://i.ibb.co/.../....jpg`) as the Instagram `image_url`.
 
 ## Step 5 — Write the caption
 Hebrew, **70–130 words** (shorter, punchier captions in the 40–70 word range are also fine and encouraged sometimes — the account's best posts vary in length; don't default to maximal length every time). Structure:
