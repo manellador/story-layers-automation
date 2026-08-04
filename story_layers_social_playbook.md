@@ -161,6 +161,8 @@ Two-step Instagram publish:
 - Report the failure clearly (see report format below) — do not attempt any workaround or alternate content.
 
 ## Step 7 — Record history + final report
+**If running as a cloud routine:** after writing any history entry below (success in this step, or a failure entry per Step 6), `git add story_layers_social_history.json`, commit, and push back to this repo's `main` branch before finishing the run. The sandbox is a fresh clone every run — without pushing, the next scheduled run won't see today's entry and the no-repeat rules in Step 1 will silently stop working. **If running as the local Windows scheduled task:** no git action needed, the plain file write is sufficient (that copy isn't git-tracked against this repo).
+
 On a successful publish, append one entry to `story_layers_social_history.json` with: `date` (today, YYYY-MM-DD), `post_id`, `permalink` (construct as `https://www.instagram.com/p/<shortcode>/` if available, otherwise the raw media id), `concept`, `event_type`, `audience`, `location`, `mood`, `color_palette`, `image_style` ("product-macro" or "emotional-moment", per Step 4), `opening_line` (exact text), `cta` (exact text), `image_prompt` (the full Gemini prompt used), `caption` (full text), `hashtags` (array), `status: "published"`.
 
 **Image style balance:** before picking Style A or B in Step 4, check `image_style` on the last 3 history entries — if the same style was used all 3 times in a row, prefer the other style today (this is what keeps the "roughly half-and-half" balance real instead of drifting to one style).
