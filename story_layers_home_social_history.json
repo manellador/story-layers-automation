@@ -21,5 +21,21 @@
     ],
     "status": "published",
     "notes": "Published manually with explicit per-post owner approval (this account does not yet have standing autonomous-publish authorization). Image is the owner's own real product photo, confirmed by owner 2026-08-03."
+  },
+  {
+    "date": "2026-09-03",
+    "day_theme": "thursday_flagship_purchase_cta",
+    "post_id": null,
+    "permalink": null,
+    "product": null,
+    "source_image_drive_id": null,
+    "source_image_name": null,
+    "hosted_image_url": null,
+    "opening_line": null,
+    "cta": null,
+    "caption": null,
+    "hashtags": [],
+    "status": "failed",
+    "notes": "No usable image found. Scanned the HOME Drive folder (folder_id 18DX8EgR_hNM_aqWvAKUzfRAcm3CImn75): 0 non-trashed files present. The only 5 files that ever existed there (added 2026-08-23) are already trashed and are all named 'ChatGPT Image Aug 17, 2026 ...png' — clearly AI-generated images, not real product photography, so they would not have qualified under the playbook's hard rule against stock/reference imagery even if untrashed. No content was published; nothing was trashed/deleted (nothing eligible to delete). Owner needs to upload new real product photos/videos to the HOME folder before the next scheduled run."
   }
 ]
