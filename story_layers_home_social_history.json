@@ -21,5 +21,21 @@
     ],
     "status": "published",
     "notes": "Published manually with explicit per-post owner approval (this account does not yet have standing autonomous-publish authorization). Image is the owner's own real product photo, confirmed by owner 2026-08-03."
+  },
+  {
+    "date": "2026-09-06",
+    "day_theme": "sunday_product_inspiration",
+    "post_id": null,
+    "permalink": null,
+    "product": null,
+    "source_image_drive_id": null,
+    "source_image_name": null,
+    "hosted_image_url": null,
+    "opening_line": null,
+    "cta": null,
+    "caption": null,
+    "hashtags": [],
+    "status": "failed",
+    "notes": "Skipped publishing: no verified authentic own-product photo available in the HOME Drive folder. Scanned 15 unused files (5 from 2026-08-23, all literally named 'ChatGPT Image ...'; 10 from 2026-09-02, generically/hash-named or descriptively named but otherwise matching the same batch). Sampled 4 of the 10 Sep-2 files by downloading and visually inspecting them (door sign 'משפי אופיר', bathroom toothbrush/soap caddy, textured ceramic planter, glass propagation test-tube stand) — all four are clearly polished AI-generated/stock-style renders (studio lighting, rounded app-icon-style crop on the door sign, glazed-ceramic/blown-glass materials inconsistent with FDM 3D printing, no visible print layer lines), not real photos of Story Layers Home's own 3D-printed products. Per playbook hard rule (never use stock/reference images) and the 'genuinely unsure -> flag and skip' instruction, did not select, process, or publish any image, and did not touch/trash any Drive file. Flagging for owner: the entire current HOME folder inventory appears to be AI-generated mockups rather than real product photography, which will block the upcoming Tuesday/Thursday runs too until real photos are uploaded or the owner confirms otherwise."
   }
 ]
