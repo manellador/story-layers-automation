@@ -20,7 +20,17 @@
       "#עסק_קטן"
     ],
     "status": "published",
-    "notes": "Published manually with explicit per-post owner approval (this account does not yet have standing autonomous-publish authorization). Image is the owner's own real product photo, confirmed by owner 2026-08-03."
+    "posted_at_local": "15:28",
+    "insights": {
+      "reach": 177,
+      "likes": 15,
+      "comments": 2,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 17
+    },
+    "insights_fetched_at": "2026-09-07",
+    "notes": "Published manually with explicit per-post owner approval (this account does not yet have standing autonomous-publish authorization). Image is the owner's own real product photo, confirmed by owner 2026-08-03. Backfilled posted_at_local/insights on 2026-09-07 when the history schema was extended for daily posting + time-of-day analysis (see playbook)."
   },
   {
     "date": "2026-09-06",
@@ -42,6 +52,16 @@
       "#הדפסה_תלת_ממד"
     ],
     "status": "published",
-    "notes": "Owner explicitly confirmed live in chat (2026-09-06, after the scheduled run's automated authenticity check flagged the HOME folder images as looking AI-generated/stock-style) that the current HOME folder photos are acceptable to use as-is. Proceeded to publish this run using that explicit approval. Image processed per playbook cloud path: downloaded via Composio Google Drive, resized to 1080px width/quality 85 with Pillow, hosted via ImgBB (expiration 2592000). Note: api.imgbb.com and i.ibb.co are blocked by this session's local sandbox egress policy, so the resize+ImgBB-upload step ran inside Composio's remote workbench sandbox instead (same method, different execution environment); hosted URL verified 200 + image/jpeg before publishing. Published via Composio Instagram tools to the correct account (story_layers_home_il, IG User ID 27842163422059878) — confirmed via INSTAGRAM_GET_IG_MEDIA before logging. Source file trash FAILED: both Composio's GOOGLEDRIVE_TRASH_FILE and this routine's native Google Drive connector returned 'insufficient permissions' (403 insufficientFilePermissions / caller does not have permission) for file 1J3fQzx1MctBnwg6aqd1yobSEf-K4lhXw. The post itself is live and unaffected; the source file remains in the HOME folder untrashed and will need manual removal or a Drive permissions fix so future runs don't need to be told to skip it."
+    "posted_at_local": "01:40",
+    "insights": {
+      "reach": 75,
+      "likes": 8,
+      "comments": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 8
+    },
+    "insights_fetched_at": "2026-09-07",
+    "notes": "Owner explicitly confirmed live in chat (2026-09-06, after the scheduled run's automated authenticity check flagged the HOME folder images as looking AI-generated/stock-style) that the current HOME folder photos are acceptable to use as-is. Proceeded to publish this run using that explicit approval. Image processed per playbook cloud path: downloaded via Composio Google Drive, resized to 1080px width/quality 85 with Pillow, hosted via ImgBB (expiration 2592000). Note: api.imgbb.com and i.ibb.co are blocked by this session's local sandbox egress policy, so the resize+ImgBB-upload step ran inside Composio's remote workbench sandbox instead (same method, different execution environment); hosted URL verified 200 + image/jpeg before publishing. Published via Composio Instagram tools to the correct account (story_layers_home_il, IG User ID 27842163422059878) — confirmed via INSTAGRAM_GET_IG_MEDIA before logging. Source file trash FAILED: both Composio's GOOGLEDRIVE_TRASH_FILE and this routine's native Google Drive connector returned 'insufficient permissions' (403 insufficientFilePermissions / caller does not have permission) for file 1J3fQzx1MctBnwg6aqd1yobSEf-K4lhXw. The post itself is live and unaffected; the source file remains in the HOME folder untrashed and will need manual removal or a Drive permissions fix so future runs don't need to be told to skip it. posted_at_local is 01:40 because this post was published live mid-conversation, not at a chosen time — don't weight it in early time-of-day analysis once more data exists."
   }
 ]
