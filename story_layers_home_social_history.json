@@ -22,14 +22,14 @@
     "status": "published",
     "posted_at_local": "15:28",
     "insights": {
-      "reach": 177,
+      "reach": 189,
       "likes": 15,
       "comments": 2,
       "saved": 0,
       "shares": 0,
       "total_interactions": 17
     },
-    "insights_fetched_at": "2026-09-07",
+    "insights_fetched_at": "2026-09-22",
     "notes": "Published manually with explicit per-post owner approval (this account does not yet have standing autonomous-publish authorization). Image is the owner's own real product photo, confirmed by owner 2026-08-03. Backfilled posted_at_local/insights on 2026-09-07 when the history schema was extended for daily posting + time-of-day analysis (see playbook)."
   },
   {
@@ -54,14 +54,14 @@
     "status": "published",
     "posted_at_local": "01:40",
     "insights": {
-      "reach": 75,
-      "likes": 8,
+      "reach": 140,
+      "likes": 9,
       "comments": 0,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 8
+      "total_interactions": 9
     },
-    "insights_fetched_at": "2026-09-07",
+    "insights_fetched_at": "2026-09-22",
     "notes": "Owner explicitly confirmed live in chat (2026-09-06, after the scheduled run's automated authenticity check flagged the HOME folder images as looking AI-generated/stock-style) that the current HOME folder photos are acceptable to use as-is. Proceeded to publish this run using that explicit approval. Image processed per playbook cloud path: downloaded via Composio Google Drive, resized to 1080px width/quality 85 with Pillow, hosted via ImgBB (expiration 2592000). Note: api.imgbb.com and i.ibb.co are blocked by this session's local sandbox egress policy, so the resize+ImgBB-upload step ran inside Composio's remote workbench sandbox instead (same method, different execution environment); hosted URL verified 200 + image/jpeg before publishing. Published via Composio Instagram tools to the correct account (story_layers_home_il, IG User ID 27842163422059878) — confirmed via INSTAGRAM_GET_IG_MEDIA before logging. Source file trash FAILED: both Composio's GOOGLEDRIVE_TRASH_FILE and this routine's native Google Drive connector returned 'insufficient permissions' (403 insufficientFilePermissions / caller does not have permission) for file 1J3fQzx1MctBnwg6aqd1yobSEf-K4lhXw. The post itself is live and unaffected; the source file remains in the HOME folder untrashed and will need manual removal or a Drive permissions fix so future runs don't need to be told to skip it. posted_at_local is 01:40 because this post was published live mid-conversation, not at a chosen time — don't weight it in early time-of-day analysis once more data exists."
   },
   {
@@ -86,14 +86,14 @@
     "status": "published",
     "posted_at_local": "17:41",
     "insights": {
-      "reach": 102,
+      "reach": 134,
       "likes": 6,
       "comments": 0,
       "saved": 0,
       "shares": 0,
       "total_interactions": 6
     },
-    "insights_fetched_at": "2026-09-17",
+    "insights_fetched_at": "2026-09-22",
     "notes": "Tuesday run (2026-09-08 is a Tuesday in Asia/Jerusalem, matching the normal Sun/Tue/Thu cadence referenced in this run's trigger prompt as well as the playbook's newer daily cadence) — day_theme = personal/behind-the-scenes. Scanned the HOME Drive folder: 19 unused files, none newer than 2026-09-06 (createdTime 2026-08-23 or 2026-09-02 only) — i.e. no new batch has landed since the owner's 2026-09-06 live-chat approval of 'the files that existed in the folder at that time', so per the playbook's documented precedent that approval covers this exact remaining file set (confirmed no files postdate 2026-09-06). Visually inspected 4 of the 19 by downloading and viewing them (vinyl record stand, ceramic-style planter, crocheted-yarn cacti set, skull-shaped controller stand) — all still read as polished AI-generated/stock-style renders (reused prop set — the same donut-shaped ceramic vase appears in two 'different' scenes — plus 10 of the 19 files are literally named 'עותק של ChatGPT Image ...'), and the crocheted-cacti file is not even a 3D-printed product and does not belong in this folder at all. Did not use the cacti file. Selected the vinyl record stand image (מעמד תקליטים מעוצב.png) since it maps to a confirmed real product name from the business's own .3mf product list ('a vinyl record stand') and falls under the owner's existing approval for this file batch. HOME folder has no genuine 3D-printing-process/BTS photos at all (finished-product lifestyle shots only) — per playbook 'Content supply' section, did not force a fabricated process narrative into the Tuesday slot; instead used the playbook-sanctioned 'question to followers about ... shape/use' angle for Tuesday, without inventing any personal story, dilemma, or customer interaction. Image processed per playbook cloud path: downloaded via Composio Google Drive, resized to 1080px width/quality 85 with Pillow, hosted via ImgBB (expiration 2592000). Direct local curl to api.imgbb.com again failed (CONNECT tunnel 403, per known sandbox egress block), so the resize+upload ran inside Composio's COMPOSIO_REMOTE_WORKBENCH instead; hosted URL verified 200 + image/jpeg from that same remote sandbox before publishing. Published via Composio Instagram tools; INSTAGRAM_GET_IG_MEDIA confirmed username=story_layers_home_il (IG User ID 27842163422059878, correct account, not story_layers_il) before logging. Source file trash FAILED again with the same error as the 2026-09-06 precedent: both Composio's GOOGLEDRIVE_TRASH_FILE and this routine's native Google Drive connector's trash tool returned 'insufficient permissions' (403 insufficientFilePermissions / caller does not have permission) for file 1r9f9_SNeIDwQNGqkPSeRmSc1p7x6Qpg7. The post itself is live and unaffected; the source file remains in the HOME folder untrashed. This is now the second consecutive run hitting the identical Drive permissions error — flagging clearly to the owner that a Drive sharing/permissions fix is needed (this session's connected account likely only has Viewer/Commenter access, not Editor, on this folder) so future runs can actually remove used files. Only 2 prior published posts have insights snapshots (both fetched 2026-09-07, <7 days old, so no refresh needed this run) — well below the 8-post threshold for a data-driven recommended posting hour, so the placeholder recommendation (19:00-20:00 Asia/Jerusalem) still applies per playbook; today's post went live at 17:41 local (outside that window, since IG containers publish immediately on creation, not at a scheduled time). Flagging content-supply risk per playbook: the folder's remaining ~18 files are all lifestyle-style renders (no BTS/process shots), and one file (crocheted cacti) does not belong in this business's folder at all and should be checked/removed by the owner."
   },
   {
@@ -133,5 +133,24 @@
     "insights": null,
     "insights_fetched_at": null,
     "notes": "Thursday run (2026-09-17 is a Thursday in Asia/Jerusalem, the normal Sun/Tue/Thu cadence referenced in this run's trigger; not a manual/test run) — day_theme = flagship product & purchase CTA. Confirmed correct IG target account first via INSTAGRAM_GET_USER_INFO: username=story_layers_home_il, IG User ID 27842163422059878 (not story_layers_il). Scanned the HOME Drive folder (GOOGLEDRIVE_FIND_FILE, trashed=false): 14 files remain, identical set to the 2026-09-10 run (no new uploads since createdTime 2026-09-02 — the owner has not added new photos). 12 of the 14 were already confirmed unusable by prior runs and not re-opened here: 5 files literally named 'עותק של ChatGPT Image ...' (self-evidently AI-generated); שלט כניסה לבית בעיצוב אישי.jpg (garbled/nonsensical Hebrew lettering, definitive AI-generation artifact); קערה עם שם הכלב.png (appears to be a real photo of a third-party branded 'UZO' pet bowl, not this business's own 3D-printed product — brand-safety risk); עציץ מעוצב.png and מבחנה מזכוכית + מתקן ייחור.png (flawless studio catalog renders inconsistent with photographed 3D-printed plastic parts); שילוט אמבטיה.png (same flawless catalog-render style); קקטוסים סרוגים.png (crocheted yarn cacti — not a 3D-printed product at all, does not belong in this folder); מעמד תקליטים מעוצב.png (already published 2026-09-08, so already-used regardless of authenticity). This run visually inspected the only 2 files never individually opened by a prior run: (1) 34837705-83c0-4775-bba7-9c29299f4b5e.png — shows a skull-shaped game-controller stand holding a PS5 controller; the background includes the same donut-shaped ceramic vase prop already flagged on 2026-09-08 as reused across supposedly-different 'scenes' (strong AI-generation evidence), and a skull-shaped controller stand does not match any confirmed product name from this business's own .3mf catalog. (2) שילוט שירותים.png — a restroom door sign (blue male/female pictograms), matching the exact flawless studio-render style of the already-rejected sibling file שילוט אמבטיה.png, and likewise no match to the known product catalog. Neither file was judged to be authentic own-photography of this business's real products, so neither was used. Conclusion: the HOME Drive folder currently has zero usable authentic images, same finding as the 2026-09-10 run — the owner needs to upload new real product photos before a future run can publish. No image was used, nothing was published, and per Step 6/7 no source file was trashed from Drive this run (only done after a confirmed live publish). Also performed this run's required performance-tracking step: backfilled the missing insights snapshot for the 2026-09-08 published post (reach 102, likes 6, total_interactions 6, fetched 2026-09-17) since it was ≥7 days old and missing insights. Only 3 published posts now have insights snapshots — still below the 8-post threshold for a data-driven recommended posting hour, so the placeholder recommendation (19:00–20:00 Asia/Jerusalem) still applies, unchanged from prior runs. Flagging to the owner again: content supply is exhausted — the HOME folder needs genuine, unedited photos of the business's own 3D-printed products (not AI-generated renders, not third-party product photos, not non-3D-printed items) before any further Sunday/Tuesday/Thursday post can go out. The Drive-permissions issue that blocked trashing used files on 2026-09-06/09-08 was not re-tested this run since no file was used or needed trashing."
+  },
+  {
+    "date": "2026-09-22",
+    "day_theme": "tuesday_personal_behind_the_scenes",
+    "post_id": null,
+    "permalink": null,
+    "product": null,
+    "source_image_drive_id": null,
+    "source_image_name": null,
+    "hosted_image_url": null,
+    "opening_line": null,
+    "cta": null,
+    "caption": null,
+    "hashtags": [],
+    "status": "failed",
+    "posted_at_local": null,
+    "insights": null,
+    "insights_fetched_at": null,
+    "notes": "Tuesday run (2026-09-22 is a Tuesday in Asia/Jerusalem, normal Sun/Tue/Thu cadence; not a manual/test run) — day_theme = personal/behind-the-scenes. Confirmed correct IG target account via the connected account's own metadata before doing anything else: username=story_layers_home_il, IG User ID 27842163422059878 (Composio account alias story_layers_home) — not story_layers_il. Scanned the HOME Drive folder (GOOGLEDRIVE_FIND_FILE, trashed=false, folder_id 18DX8EgR_hNM_aqWvAKUzfRAcm3CImn75): 14 files remain, byte-for-byte identical file-id set to the 2026-09-10 and 2026-09-17 runs — same createdTime values (2026-09-02 or 2026-08-23), confirming no new photos have been uploaded by the owner since Sep 2. Every one of these 14 files was already individually inspected and conclusively rejected across the two prior runs: 5 files literally named 'עותק של ChatGPT Image ...' (self-evidently AI-generated); שלט כניסה לבית בעיצוב אישי.jpg (garbled/nonsensical Hebrew lettering, a definitive AI-generation artifact); קערה עם שם הכלב.png (appears to be a real photo of a third-party branded 'UZO' pet bowl, not this business's own product — brand-safety risk); עציץ מעוצב.png, מבחנה מזכוכית + מתקן ייחור.png, שילוט אמבטיה.png, שילוט שירותים.png (flawless studio catalog renders inconsistent with photographed 3D-printed plastic parts); קקטוסים סרוגים.png (crocheted yarn cacti — not a 3D-printed product at all); 34837705-83c0-4775-bba7-9c29299f4b5e.png (skull-shaped controller stand with the same reused donut-shaped ceramic vase prop flagged 2026-09-08 as AI-generation evidence, no catalog match); מעמד תקליטים מעוצב.png (already published 2026-09-08). Since the folder contents are unchanged from the immediately preceding run's thorough visual inspection (no new file IDs, no new createdTime), did not re-download/re-inspect each file again — relying on those already-documented, concrete findings rather than re-litigating an unchanged data set. Conclusion: zero usable authentic own-product photos exist in the HOME folder, same as the 2026-09-10 and 2026-09-17 runs (now three consecutive failed runs for this exact reason). Per Step 7, did not publish and did not attempt any workaround; no source file was used so none was trashed from Drive this run (Step 6 N/A). Performed this run's required performance-tracking step: refreshed insights snapshots for all 3 published posts via INSTAGRAM_GET_IG_MEDIA_INSIGHTS since the two oldest (2026-08-03, 2026-09-06) had insights_fetched_at of 2026-09-07, well past 7 days old — updated reach/likes/comments/saved/shares/total_interactions for all three (2026-08-03: reach 189, total_interactions 17; 2026-09-06: reach 140, total_interactions 9; 2026-09-08: reach 134, total_interactions 6), insights_fetched_at now 2026-09-22 for all three. Still only 3 published posts have insights snapshots — well below the 8-post threshold for a data-driven recommended posting hour, so the placeholder recommendation (19:00-20:00 Asia/Jerusalem) is unchanged. Flagging to the owner again, now urgently: content supply has been fully exhausted for three consecutive scheduled runs (Sep 10, Sep 17, Sep 22) — the HOME Drive folder needs genuine, unedited photos of the business's own real 3D-printed products uploaded before any future run (Sunday/Tuesday/Thursday) can publish. Tuesday's theme specifically needs process/behind-the-scenes shots (printer, packing, work-in-progress), which this folder has never contained at all — flagging per the playbook's 'Content supply' section that this content type has nothing to draw on. The unresolved Drive trash-permission issue (403 insufficientFilePermissions, first seen 2026-09-06/09-08) was not re-tested this run since no file was used or needed trashing."
   }
 ]
