@@ -152,5 +152,24 @@
     "insights": null,
     "insights_fetched_at": null,
     "notes": "Thursday run (2026-09-24 is a Thursday in Asia/Jerusalem, normal Sun/Tue/Thu cadence — not a manual/test run). day_theme = flagship product & purchase CTA. Confirmed correct IG target account first via INSTAGRAM_GET_USER_INFO (ig_user_id='me'): username=story_layers_home_il, IG User ID 27842163422059878 (not story_layers_il). Scanned the HOME Drive folder (GOOGLEDRIVE_FIND_FILE, trashed=false): 14 files remain, identical file-id set to the 2026-09-10 and 2026-09-17 runs — no new uploads since createdTime 2026-09-02 (the owner still has not added new photos in 3+ weeks). All 14 were already individually inspected and rejected/used by prior runs, so none were re-opened this run: 5 files literally named 'עותק של ChatGPT Image ...' (self-evidently AI-generated); שלט כניסה לבית בעיצוב אישי.jpg (garbled/nonsensical Hebrew lettering, definitive AI-generation artifact); קערה עם שם הכלב.png (real photo of a third-party branded 'UZO' pet bowl, not this business's own product — brand-safety risk); עציץ מעוצב.png, מבחנה מזכוכית + מתקן ייחור.png, שילוט אמבטיה.png, שילוט שירותים.png (flawless studio catalog renders inconsistent with photographed 3D-printed plastic parts); קקטוסים סרוגים.png (crocheted yarn cacti, not a 3D-printed product, doesn't belong in this folder); 34837705-83c0-4775-bba7-9c29299f4b5e.png (skull-shaped controller stand with the same reused donut-shaped ceramic vase prop flagged 2026-09-08, no catalog match); מעמד תקליטים מעוצב.png (already published 2026-09-08 — already-used regardless of authenticity). Conclusion unchanged from the two prior Thursday runs: the HOME Drive folder has zero usable authentic images. No image was used, nothing was published, and per Step 6/7 no source file was trashed from Drive this run. Also performed this run's required performance-tracking step: refreshed insights snapshots for all 3 published posts since each was well past the 7-day refresh window (2026-08-03 post: reach 177→194, total_interactions unchanged at 17; 2026-09-06 post: reach 75→157, total_interactions 8→9 [+1 like]; 2026-09-08 post: reach 102→147, total_interactions unchanged at 6; all fetched 2026-09-24). Still only 3 published posts have insights snapshots — below the 8-post threshold for a data-driven recommended posting hour, so the placeholder recommendation (19:00–20:00 Asia/Jerusalem) still applies, unchanged from prior runs. Flagging to the owner again, now for the third consecutive scheduled run: content supply has been exhausted for over three weeks — the HOME folder needs genuine, unedited photos of the business's own 3D-printed products uploaded before any further post (Sun/Tue/Thu, now effectively also the rest of the 7-day cadence the playbook describes) can go out. The unresolved Drive-permissions issue blocking trashing of the already-used 2026-09-08 file was not re-tested this run since no new file was used."
+  },
+  {
+    "date": "2026-10-01",
+    "day_theme": "thursday_flagship_purchase_cta",
+    "post_id": null,
+    "permalink": null,
+    "product": null,
+    "source_image_drive_id": null,
+    "source_image_name": null,
+    "hosted_image_url": null,
+    "opening_line": null,
+    "cta": null,
+    "caption": null,
+    "hashtags": [],
+    "status": "failed",
+    "posted_at_local": null,
+    "insights": null,
+    "insights_fetched_at": null,
+    "notes": "Thursday run (2026-10-01 is a Thursday in Asia/Jerusalem, normal cadence). Two blockers: (1) INSTAGRAM_GET_USER_INFO failed with 401 OAuthException code 190: 'session has been invalidated because the user changed their password or Facebook has changed the session' - the Composio Instagram connection (alias story_layers_home) must be re-authorized by the owner; no publishing or insights refresh possible. (2) HOME Drive folder still has the same 14 files (none newer than 2026-09-02), all already rejected/used in prior runs (AI-generated, catalog renders, third-party product, non-3D-printed item, or already published 2026-09-08). No image used, nothing published, nothing trashed. Insights not refreshed (IG auth down); recommended posting hour remains placeholder 19:00-20:00 Asia/Jerusalem."
   }
 ]
