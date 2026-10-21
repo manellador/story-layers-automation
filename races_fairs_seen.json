@@ -285,5 +285,12 @@
     "city": "לא פורסם",
     "type": "race",
     "first_seen_date": "2026-10-19"
+  },
+  {
+    "name": "מרוץ להבים",
+    "date": "2026-11-27",
+    "city": "להבים",
+    "type": "race",
+    "first_seen_date": "2026-10-21"
   }
 ]
